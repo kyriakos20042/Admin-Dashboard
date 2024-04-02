@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin</title>
+    <title>Dashboard</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <div class="grid-container">
+    <div class="grid">
         <nav class="sidebar">
             <div class="branding">
                 <a href="#">
@@ -40,7 +40,7 @@
                     <img src="assets/communities.svg" alt="communities">
                     <p class="text">Communities</p>
                 </a>
-                <a href="#">
+                <a href="#" id="settings">
                     <img src="assets/settings.svg" alt="settings">
                     <p class="text">Settings</p>
                 </a>
@@ -88,7 +88,193 @@
             </div>
         </header>
         <main>
-            cccc
+            <section class="projects">
+                <h2>Your Projects</h2>
+                <div class="grid-container">
+                    <a href="#" class="card project-item">
+                        <h3 class="title">Super Cool Project</h3>
+                        <p class="description">
+                            Sed tempus ut lacus ut scelerisque. 
+                            Suspendisse sollicitudin nibh erat, id 
+                            facilisis felis accumsan nec.
+                        </p>
+                        <div class="icons-container">
+                            <button type="button">
+                                <img src="./assets/star-plus-outline.svg" alt="favorite" width="30px">
+                            </button>
+                            <button type="button">
+                                <img src="./assets/eye-plus-outline.svg" alt="view" width="30px">
+                            </button>
+                            <button type="button">
+                                <img src="./assets/source-fork.svg" alt="fork on GitHub" width="30px">
+                            </button>
+                        </div>
+                    </a>
+                    <a href="#" class="card project-item">
+                        <h3 class="title">Less Cool Project</h3>
+                        <p class="description">
+                            Nullam condimentum ipsum ut lectus vehicula
+                            consectetur. Quisque sed dolor tincidunt,
+                            consectetur sapien et, facilisis dolor. Duis sem
+                            purus, dignissim ut sapien in, varius
+                            pellentesque lacus.
+                        </p>
+                        <div class="icons-container">
+                            <button type="button">
+                                <img src="./assets/star-plus-outline.svg" alt="favorite" width="30px">
+                            </button>
+                            <button type="button">
+                                <img src="./assets/eye-plus-outline.svg" alt="view" width="30px">
+                            </button>
+                            <button type="button">
+                                <img src="./assets/source-fork.svg" alt="fork on GitHub" width="30px">
+                            </button>
+                        </div>
+                    </a>
+                    <a href="#" class="card project-item">
+                        <h3 class="title">Impossible App</h3>
+                        <p class="description">
+                            In hac habitasse platea dictumst. Vivamus
+                            dictum rutrum arcu, a placerat velit sagittis 
+                            id.
+                        </p>
+                        <div class="icons-container">
+                            <button type="button">
+                                <img src="./assets/star-plus-outline.svg" alt="favorite" width="30px">
+                            </button>
+                            <button type="button">
+                                <img src="./assets/eye-plus-outline.svg" alt="view" width="30px">
+                            </button>
+                            <button type="button">
+                                <img src="./assets/source-fork.svg" alt="fork on GitHub" width="30px">
+                            </button>
+                        </div>
+                    </a>
+                    <a href="#" class="card project-item">
+                        <h3 class="title">Easy Peasy App</h3>
+                        <p class="description">
+                            Etiam cursus eros ac efficitur fringilla,
+                            Vestibulum dignissim urna eget accumsan
+                            aliquam. Curabitur dignissim nisi in tortor
+                            commodo, ac bibendium magna ticcidunt.
+                        </p>
+                        <div class="icons-container">
+                            <button type="button">
+                                <img src="./assets/star-plus-outline.svg" alt="favorite" width="30px">
+                            </button>
+                            <button type="button">
+                                <img src="./assets/eye-plus-outline.svg" alt="view" width="30px">
+                            </button>
+                            <button type="button">
+                                <img src="./assets/source-fork.svg" alt="fork on GitHub" width="30px">
+                            </button>
+                        </div>
+                    </a>
+                    <a href="#" class="card project-item">
+                        <h3 class="title">Ad Blocker</h3>
+                        <p class="description">
+                            Quisque eget rutrum nisl. Nam augue
+                            justo,cursus vitae metus vel, pharetra 
+                            hendrerit felis. Aliquam sed malesuada 
+                            eros.
+                        </p>
+                        <div class="icons-container">
+                            <button type="button">
+                                <img src="./assets/star-plus-outline.svg" alt="favorite" width="30px">
+                            </button>
+                            <button type="button">
+                                <img src="./assets/eye-plus-outline.svg" alt="view" width="30px">
+                            </button>
+                            <button type="button">
+                                <img src="./assets/source-fork.svg" alt="fork on GitHub" width="30px">
+                            </button>
+                        </div>
+                    </a>
+                    <a href="#" class="card project-item">
+                        <h3 class="title">Money Maker</h3>
+                        <p class="description">
+                            Praesent convallis, libero quis congue
+                            elementum, nunc ante faucibus sapien, ac 
+                            scelerisque tortor purus sit amet ex.
+                            Pellentesque mollis nec sem vel aliquam.
+                        </p>
+                        <div class="icons-container">
+                            <button type="button">
+                                <img src="./assets/star-plus-outline.svg" alt="favorite" width="30px">
+                            </button>
+                            <button type="button">
+                                <img src="./assets/eye-plus-outline.svg" alt="view" width="30px">
+                            </button>
+                            <button type="button">
+                                <img src="./assets/source-fork.svg" alt="fork on GitHub" width="30px">
+                            </button>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section class="announcements">
+                <h2>Announcements</h2>
+                <div class="card">
+                    <a href="#" class="announcement-item">
+                        <h5 class="title">Site Maintenance</h5>
+                        <small class="text">
+                            Vestibulum condimentum tellus lacus
+                            in accumsan elit maximus ac. Donec
+                            hendrerit sodales congue...
+                        </small>
+                    </a>
+                    <a href="#" class="announcement-item">
+                        <h5 class="title">Community Share Day</h5>
+                        <small class="text">
+                            Nam vel lectus tincidunt rutrum nulla 
+                            eu, ornare libero. Aliquam dictum
+                            accumsan porttitor...
+                        </small>
+                    </a>
+                    <a href="#" class="announcement-item">
+                        <h5 class="title">Updated Privacy Policy</h5>
+                        <small class="text">
+                            Phasellus efficitur nisi eget elit
+                            consectetur eget condimentum ante
+                            auctor. Cras fringilla sagittis sem in 
+                            mattis...
+                        </small>
+                    </a>
+                </div>
+            </section>
+            <section class="trending">
+                <h2>Trending</h2>
+                <div class="card">
+                    <a href="#">
+                        <img src="assets/panda.png" alt="avatar of trending user" class="trending-user avatar">
+                    </a>
+                    <div class="trending-users details">
+                        <a href="#"><small class="handle">@panda</small></a>
+                        <a href="#"><small class="trending-project-name">Bamboo Eating App</small></a>
+                    </div>
+                    <a href="#">
+                        <img src="assets/rabbit.png" alt="avatar of trending user" class="trending-user avatar">
+                    </a>
+                    <div class="trending-users details">
+                        <a href="#"><small class="handle">@rabbit</small></a>
+                        <a href="#"><small class="trending-project-name">Bouncing Project</small></a>
+                    </div>
+                    <a href="#">
+                        <img src="assets/chicken.png" alt="avatar of trending user" class="trending-user avatar">
+                    </a>
+                    <div class="trending-users details">
+                        <a href="#"><small class="handle">@hen</small></a>
+                        <a href="#"><small class="trending-project-name">Huaxia Chinese School</small></a>
+                    </div>
+                    <a href="#">
+                        <img src="assets/cat.png" alt="avatar of trending user" class="trending-user avatar">
+                    </a>
+                    <div class="trending-users details">
+                        <a href="#"><small class="handle">@miaow</small></a>
+                        <a href="#"><small class="trending-project-name">Super Cool Cat Project</small></a>
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
 </body>
