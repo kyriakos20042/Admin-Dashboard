@@ -1,5 +1,7 @@
 :root {
     --primary-color: #0ea5e9;
+    --secondary-color: #e5e7eb;
+    --shadow-color: #7d7d7d;
 }
 
 * {
@@ -9,11 +11,24 @@
 }
 
 body {
+    background-color: var(--secondary-color);
     height:100dvh;
 }
-h1 {
+
+h1,
+.username-and-handle {
     font-size:1.5rem;
 }
+
+h2 {
+    font-size:1.2rem;
+    margin-bottom:10px;
+}
+
+h3 {
+    font-size:1rem;
+}
+
 a {
     text-decoration: none;
 }
@@ -34,7 +49,6 @@ button {
 .sidebar {
     grid-column: 1;
     grid-row: 1 / -1;
-    height:100dvh;
     background-color: var(--primary-color);
     display:flex;
     flex-direction: column;
@@ -57,9 +71,9 @@ button {
     filter: brightness(90%);
 }
 
-.sidebar h1,p {
+.sidebar p, h1 {
     grid-column-start: 2;
-    align-self: center  ;
+    align-self: center;
     font-weight: bold;
     color:white;
 }
@@ -70,11 +84,80 @@ button {
     justify-self: center;
 }
 
-.left img {
-    width:30px;
-    margin-left:10px;
-    margin-top:5px;
+header {
+    box-shadow: 2px 2px 5px var(--shadow-color);
+    background-color: white;
+    grid-column: 2;
+    grid-row: 1 / 2;
+    display:grid;
+    grid-template-rows: 1fr 2fr;
+    padding: 20px 30px;
+    gap:20px;
+}
+header .top {
+    display: flex;
+    gap:20px;
+}
+header .top .left {
+    display: flex;
+    align-items: center;
+    gap:15px;
+    flex:5;
 }
 #search-bar {
-    
+    outline:none;
+    padding:5px 15px;
+    width: 70%;
+    border:none;
+    border-radius:10px;
+    background-color: var(--secondary-color);
+    font-family: inherit;
+}
+header .top .right {
+    flex: 1;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap:25px;
+    font-weight: bold;
+}
+.user-info {
+    color:black;
+    display:flex;
+    align-items: center;
+    gap:15px;
+}
+.avatar {
+    border-radius: 100%;
+}
+header .bottom {
+    grid-row-start: 2;
+    display:flex;
+    align-items: center;
+}
+header .greeting {
+    flex:4;
+    display:flex;
+    align-items: center;
+    gap:15px;
+    font-weight: bold;
+}
+header .greeting .text {
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+header .action-buttons {
+    flex:1;
+    display:flex;
+    justify-content: flex-end;
+    gap:25px;
+}
+header button {
+    width: 130px;
+    background-color: var(--primary-color);
+    color:white;
+    font-weight: bold;
+    padding: 10px 0;
+    border-radius:20px;
 }
